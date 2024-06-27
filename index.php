@@ -6,6 +6,6 @@
 		$uri = 'http://';
 	}
 	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/art-library/pages/home.php');
+	header('Location: '.$uri.'/art-gallary/pages/home.php');
 	exit;
 

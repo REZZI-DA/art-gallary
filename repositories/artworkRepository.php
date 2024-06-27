@@ -269,7 +269,7 @@ class artworkRepository
     {
 
         $sql = "SELECT a.artworkID, a.imagefilename,a.title, a.originalHome,t.AverageRating
-        FROM artWorks a
+        FROM artworks a
         JOIN (
             SELECT artworkID, AVG(Rating) AS AverageRating
             FROM reviews
@@ -304,7 +304,7 @@ class artworkRepository
         $sql = "SELECT a.artworkID, a.imagefilename, a.title, 
                    COALESCE(AVG(r.Rating), 0) AS AverageRating,
                    COUNT(r.Rating) AS TotalReviews
-            FROM artWorks a
+            FROM artworks a
             LEFT JOIN reviews r ON a.artworkID = r.artworkID
             WHERE a.artworkID = :artworkID
             GROUP BY a.artworkID, a.imagefilename, a.title";

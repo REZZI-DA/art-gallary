@@ -111,7 +111,7 @@ class ArtistRepository
     {
         $sql = "SELECT b.artistID,b.firstName,b.lastName, b.nationality, b.yearOfBirth,b.yearOfDeath,b.artistLink,
                 COUNT(*) AS reviewCount
-        FROM artWorks a
+        FROM artworks a
         LEFT JOIN artists b ON a.artistID = b.artistID
         GROUP BY b.artistID
         ORDER BY reviewCount DESC
