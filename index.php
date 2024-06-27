@@ -8,7 +8,7 @@ if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
 $host = $_SERVER['HTTP_HOST'];
 
 // Root-URL für die Home-Seite zusammenstellen
-$uri = $protocol . $host . '/art-gallary/pages/home.php';
+$uri = $protocol . $host . '/pages/home.php';
 
 // Weiterleitung zur Home-Seite
 header('Location: ' . $uri);
