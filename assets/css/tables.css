@@ -1,0 +1,73 @@
+.searchDiv {
+    display: flex;
+    justify-content: center; /* horizontale Zentrierung */
+    align-items: center;
+    margin-top:15px;
+}
+body{
+    line-height: 1.7;
+}
+a{
+    color:black;
+
+}
+a.white-link {
+    color: white; /* Farbe für spezifische Links mit der Klasse 'white-link' */
+}
+
+.searchContainer{
+    border-color: black;
+    border-radius: 25px;
+    border-width: 1px;
+    border-style:solid;
+    margin: 5px;
+    background: #FFFFFF; /* Hintergrundfarbe */
+    padding-bottom: 30px;
+    width: 90%; /* Breite */
+    max-width: 50em;
+    height: auto; /* Höhe */
+
+}
+.detailContainer{
+    border-color: black;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style:solid;
+    margin: 5px;
+    background: #f1bc31; /* Hintergrundfarbe */
+    padding:15px;
+    /*width: 90%; Breite */
+
+    max-width: 300px;
+    height: auto; /* Höhe */
+
+}
+.row-light{
+    background-color: #EEEEEE;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 5px;
+}
+.btn-list:hover{
+    background-color: #FFFEEE;
+}
+.btn-list:active{
+    border-color: #FFD700;
+}
+
+.table th.yellow {
+    background-color: #f1bc31;
+    color: white; 
+    padding: 10px; 
+}
+
+.table-title {
+    background-color: white;
+    color: #4d4d4d;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
