@@ -1,11 +1,16 @@
 <?php
+if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
+    $protocol = "https://";
+} else {
+    $protocol = "http://";
+}
 
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/art-gallary/pages/home.php');
-	exit;
+$host = $_SERVER['HTTP_HOST'];
 
+// Root-URL für die Home-Seite zusammenstellen
+$uri = $protocol . $host . '/art-gallary/pages/home.php';
+
+// Weiterleitung zur Home-Seite
+header('Location: ' . $uri);
+exit;
+?>
