@@ -4,7 +4,7 @@ require_once(__DIR__ . '/../repositories/userRepository.php');
 
 $fileName = basename(__FILE__);
 $folderName = basename(dirname(__FILE__));
-$parentFolderName = basename(dirname(dirname(__FILE__)));
+
 $registerUrl = "/$parentFolderName/$folderName/register.php";
 
 session_start();

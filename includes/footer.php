@@ -1,7 +1,7 @@
 <?php
 
 $parentFolderName = basename(dirname(dirname(__FILE__)));
-$logo = "/$parentFolderName/assets/images/wildaulogo.jfjf";
+$logo = "/../assets/images/wildaulogo.jfjf";
 
 ?>
 <footer class="footer" style="width: -webkit-fill-available;">

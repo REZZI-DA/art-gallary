@@ -13,14 +13,14 @@ $parentFolderName = basename(dirname(dirname(__FILE__)));
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/<?php echo $parentFolderName; ?>/assets/css/myaccount.css">
-    <link rel="stylesheet" href="/<?php echo $parentFolderName; ?>/assets/css/base.css">
+    <link rel="stylesheet" href="/../assets/css/myaccount.css">
+    <link rel="stylesheet" href="/../assets/css/base.css">
 
-    <link rel="stylesheet" href="/<?php echo $parentFolderName; ?>/assets/css/loader.css">
-    <link rel="stylesheet" href="/<?php echo $parentFolderName; ?>/assets/css/navbar.css">
-    <link rel="stylesheet" href="/<?php echo $parentFolderName; ?>/assets/css/home.css">
+    <link rel="stylesheet" href="/../assets/css/loader.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="/../assets/css/home.css">
   
-    <link rel="stylesheet" href="/<?php echo $parentFolderName; ?>/assets/css/manage.css">
+    <link rel="stylesheet" href="/../assets/css/manage.css">
 </head>
 <body>
  

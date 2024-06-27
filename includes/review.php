@@ -4,7 +4,7 @@ $isUser = isset($_SESSION['userlogin']) && $_SESSION['userlogin'] === true;
 
 $fileName = basename(__FILE__);
 $folderName = basename(dirname(__FILE__));
-$parentFolderName = basename(dirname(dirname(__FILE__)));
+
 
 
 if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
@@ -165,7 +165,7 @@ ORDER BY ReviewDate DESC";
 ?>
 
 
-<link rel="stylesheet" href="/<?php echo $parentFolderName; ?>/assets/css/review.css">
+<link rel="stylesheet" href="/../assets/css/review.css">
 
 <div class="reviewContainer" style="margin-left: 100px;">
     <?php if ($isAdmin || $isUser): ?>

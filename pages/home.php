@@ -38,7 +38,7 @@ try {
   exit;
 }
 
-$parentFolderName = basename(dirname(dirname(__FILE__)));
+
 ?>
 
 
